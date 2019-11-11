@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title> Mini-Portfolio Card Maker</title>
+</head>
+
+<body>
+<header>
+	<h1 class="header1 text-center"> Mini-Portfolio Card Maker</h1>
+</header>
+<section>
+<div id="flexContainer">
+<!--Form -->
+<div id="formDiv">
+ <form class="form1">
+   <h4> Upload Your Profile Picture</h4>
+   <div class="form-group8">
+    <label for="formInput8"> Profile picture :</label>
+    <input type="file" class="form-control form-control8" id="formInput8" placeholder="Profile picture" accept="image/png, image/jpeg, image/jpg, image/JPG" onchange='openFile(event)' required="true">
+  </div><br>
+  <h4> Enter Your details here</h4>
+  <div class="form-group1">
+    <label for="formInput1">Name* :</label>
+    <input type="text" class="form-control form-control1" id="formInput1" placeholder="Name">
+    <div class="message message1"></div>
+  </div><br>
+  
+  <div class="form-group2">
+    <label for="formInput2">Email address* :</label>
+    <input type="text" class="form-control form-control2" id="formInput2" placeholder="name@example.com"> <!--type="email" is not used here to add own validation code and error message-->
+      <div class="message message2"></div>
+  </div><br>
+  <div class="form-group3">
+    <label for="formInput3">Current Role* :</label>
+    <input type="text" class="form-control form-control3" id="formInput3" placeholder="Your current role Eg: Designer, Developer">
+    <div class=" message message3"></div>
+  </div><br>
+  
+  <div class="form-group4">
+    <label for="formTextarea1">Description of your role : </label>
+    <textarea class="form-control form-control4" id="formTextarea1" rows="3" placeholder="Eg: I am a passionate designer, with 3+ years of experience..."></textarea>
+  </div><br>
+  <div class="form-group5">
+    <label for="formInput5">LinkedIn Profile :</label>
+    <input type="url" class="form-control form-control5" id="formInput5" placeholder="linkedIn profile link">
+  </div><br>
+  
+  <div class="form-group6">
+    <label for="formInput6">Contact Number* :</label>
+    <input type="tel" class="form-control form-control6" id="formInput6" placeholder="Phone number">
+    <div class=" message message4"></div>
+  </div><br>
+  
+  <div class="form-group7">
+    <label for="formInput7"> Place :</label>
+    <input type="text" class="form-control form-control7" id="formInput7" placeholder=" City">
+  </div><br>
+  
+  <div class="form-group9 text-center">
+    <button type="submit" class="btn btn-dark">Submit</button>
+  </div>
+
+ </form>
+</div>
+<!--Code for Mini Portfolio card-->
+
+<div class="card text-center" style="width: 30rem;">
+    <img src="woman.jpg" class="card-pic" alt="examplePic" height="300px">
+    <div class="card-body"> <h4>My Portfolio Card</h4>
+       <ul class="list-group list text-center"></ul>
+    </div>
+</div>
+
+ 
+</div>
+</section>
+
+ <script type="text/javascript" src="script.js"></script>
+ 
+ <!-- Scripts for Bootstrap--> 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+body{
+	font-family: 'Bree Serif', serif;
+	background-color: #d7dadd;
+}
+
+.header1{
+   padding:20px;
+   color: white;
+   background-color: #d04e15;
+   border-bottom: 1px solid grey;
+
+ }
+.form{
+	width:25rem;
+}
+
+#formDiv{
+	border: 2px solid grey;
+	width:30rem;
+	padding:10px;
+	margin:20px;
+	background-color: #756ec5;
+
+}
+#flexContainer{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	-webkit-align-items: flex-start;
+	-ms-align-items: flex-start;
+	align-items: flex-start;
+
+}
+.card{
+	margin:20px;
+	
+	border: 2px 2px 2px #00579e;
+	-webkit-align-self: center;
+	-ms-align-self: center;
+	align-self: center;
+}
+.formDiv{
+	-webkit-align-self: center;
+	-ms-align-self: center;
+	-moz-align-self: center;
+	align-self: center;
+}
+.message{
+	color:red;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  border-radius: 5px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.card-body {
+  padding: 10px 16px;
+  background-color: #ee7642;
+  border-radius: 0 0 5px 5px;
+}
+
+.list-group-item{
+	background-color: #ee7642 !important;
+
+}
+.list1{
+  list-style: none;
+}
+.list-group{
+	list-style: none;
+}
